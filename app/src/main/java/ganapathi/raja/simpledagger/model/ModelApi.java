@@ -14,7 +14,7 @@ public class ModelApi {
         this.mRetrofit = mRetrofit;
     }
 
-    Retrofit mRetrofit;
+    private Retrofit mRetrofit;
 
     public void callApi() {
         mRetrofit.create(Api.class).getData().enqueue(new Callback<List<MovieTicketEntity>>() {

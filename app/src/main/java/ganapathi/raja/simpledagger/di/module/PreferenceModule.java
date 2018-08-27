@@ -12,7 +12,7 @@ import ganapathi.raja.simpledagger.model.UserInfo;
 public class PreferenceModule {
 
     @Provides
-    public UserInfo provideModel() {
+    public UserInfo provideUserInfo() {
         return new UserInfo();
     }
 
